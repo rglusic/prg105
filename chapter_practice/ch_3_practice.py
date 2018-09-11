@@ -22,6 +22,7 @@ b = 8
 c = 5
 print("b > a: " + str(b > a))
 print("b == a: " + str(b == a))
+print("a != b: " + str(a != b))
 print("c <= 5: " + str(c <= 5))
 
 # TODO 3.2 the if else statement
@@ -84,7 +85,7 @@ if customer_age >= 62:
 elif customer_age >= 12:
     cost = 12.89
 elif customer_age >= 4:
-    cost = 0.99 * (customer_age-3)
+    cost = 0.99 * customer_age
 elif customer_age <= 3:
     cost = 0
 
