@@ -15,7 +15,7 @@ num = 10
 # you test it
 while num > 0:
     num = num - 1
-print(num)
+    print(num)
 
 # TODO 4.3 the For Loop
 # Use a for loop with a list of the days of the week, print each day
@@ -25,7 +25,7 @@ for day in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", 
 
 # TODO 4.3 the for loop - range function
 # use the range function to print the numbers from 1 to 10
-for num in range(1, 10):
+for num in range(1, 11):
     print(num)
 
 # TODO 4.4 a running total
