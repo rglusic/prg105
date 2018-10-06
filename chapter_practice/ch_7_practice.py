@@ -52,6 +52,11 @@ else:
 
 months = list(["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sept"])
 
+months.append("Oct")
+months.append("Nov")
+months.append("Dec")
+
+print(months)
 
 # get the index of "May" from the months list and print it on screen
 index = months.index("Mar")
@@ -76,12 +81,9 @@ print(months_of_the_year)
 
 # TODO 7.7 Processing lists
 # total the values in list3 and print the results
-total = 0
-for num in list3:
-    total += num
-print("Total of list3: " + str(total))
+print("Total of list3: " + str(sum(list3)))
 # get the average of values in list 3 and print the results
-print("Average of list3: " + str(format(total/len(list3), ".2f")))
+print("Average of list3: " + str(format(sum(list3)/len(list3), ".2f")))
 # open the file states in read mode, read the contents of the file into the list states_list and print the
 # contents of states_list on screen
 states_file = open("states.txt", 'r')
