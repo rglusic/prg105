@@ -15,7 +15,8 @@ def main():
     name_list = input("Please enter your full name (first, middle and last) ").split()
     initial = ''
     for name in name_list:
-        initial += name[0] + '.'
+        initial += name[0] + ". "
+    initial = initial[:-2]  # Removes added . and space at the end.
     print("Your name's initials are: " + initial.upper())
 
 
