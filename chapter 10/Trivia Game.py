@@ -79,7 +79,8 @@ def main():
 
 
 """
-    Holds a question, 4 answers and the actual answer. Contains getter functions to access them.
+    Holds a question, 4 answers and the actual answer. Contains getter functions to access them, 
+    and setters.
 """
 
 
@@ -87,6 +88,15 @@ class Question:
     def __init__(self, question, answers, correct_answer):
         self.question = question
         self.answers = answers
+        self.correct = correct_answer
+
+    def set_answers(self, answers):
+        self.answers = answers
+
+    def set_question(self, question):
+        self.question = question
+
+    def set_correct_answer(self, correct_answer):
         self.correct = correct_answer
 
     def get_answers(self):
@@ -100,7 +110,8 @@ class Question:
 
 
 """
-    Holds player information such as the title of the player, or the current score. Contains getters to retrieve both.
+    Holds player information such as the title of the player, or the current score. Contains getters to retrieve both, 
+    and setters.
 """
 
 
@@ -111,6 +122,12 @@ class Player:
 
     def increment_score(self):
         self.score += 1
+
+    def set_score(self, score):
+        self.score = score
+
+    def set_title(self, title):
+        self.title = title
 
     def get_score(self):
         return self.score
